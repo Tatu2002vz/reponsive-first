@@ -1,0 +1,266 @@
+:root{
+    
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 18px;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+.clear{
+    clear: both;
+}
+.letter-spacing{
+    letter-spacing: 4px;
+}
+.style-img{
+    border-radius: 4px;
+    opacity: 0.7;
+}
+h1{
+    font-family: "Playfair Display";
+    font-weight: 300;
+    font-size: 36px;
+    padding: 10px 0;
+}
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 82.5%;
+    margin: 20px calc(calc(100% - 82.5%) / 2);
+}
+.width-content{
+    width: 82.5%;
+    margin: 64px calc(calc(100% - 82.5%) / 2);
+}
+.wrapper{
+    
+}
+.header{
+    background-color: #fff;
+    height: 54px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 8px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.header-title{
+    /* line-height: 54px; */
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 8px 16px;
+}
+.header-title:hover{
+    background-color: #ccc;
+}
+.header-nav{
+    list-style-type: none;
+    float: right;
+    padding: 0px 16px;
+    /* display: inline; */
+}
+.header-nav li{
+    display: inline-block;
+    padding: 8px 16px;
+}
+.header-nav li a{
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+}
+.header-nav li:hover{
+    background-color: #ccc;
+}
+.slider{
+    padding-top: 50%;
+    background: url("../img/hamburger.jpg") top center / cover no-repeat;
+}
+.slider h1{
+    margin: 12px 24px;
+    padding: 19px 0;
+    color:rgba(0, 0, 0, 0.7);
+}
+.content{
+
+}
+.content .about-catering{
+    
+}
+.col2{
+    width: 50%;
+    float: left;
+}
+.content .about-img{
+    padding: 12px 24px;
+}
+.content .about-img img{
+    max-width: 100%;
+}
+.content .about-description{
+    line-height: 1.6;
+    padding: 12px 24px;
+}
+.about-catering h1{
+    text-align: center;
+    /* padding: 10px 0; */
+}
+.content .sub-heading{
+    padding: 26px 0;
+    text-align: center;
+}
+.content .desc1-main, .content .desc2-main{
+    text-align: justify;
+}
+.content .desc1-main span{
+    background-color: #F1F1F1;
+    padding: 4px;
+}
+.content .desc2-main{
+    margin: 18px 0;
+}
+.our-menu{
+    /* height: 777px; */
+}
+
+.our-menu .menu-description{
+    padding: 12px 24px;
+}
+.our-menu h1{
+    text-align: center;
+    /* padding: 10px 0; */
+}
+.our-menu .menu-title{
+    margin-top: 26px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.our-menu .title-desc{
+    padding: 15px 0;
+    font-size: 15px;
+    color:rgba(0, 0, 0, 0.6);
+}
+.our-menu .menu-img{
+    padding: 12px 24px;
+}
+.our-menu .menu-img img{
+    border-radius: 4px;
+}
+.contact{
+    /* height: 604px; */
+    padding: 0 16px;
+}
+.contact h1{
+    padding: 30px 0;
+}
+.contact .contact-desc{
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+.contact .contact-place{
+    margin: 18px 0;
+    font-weight: 700;
+    color: #607D8B;
+}
+.contact input{
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.contact button{
+    border: none;
+    margin: 16px 0;
+    padding: 8px 16px;
+    background-color: #F1F1F1;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+    font-size: 15px;
+
+}
+.contact button:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+.footer{
+    text-align: center;
+    background-color: #F1F1F1;
+    padding: 47px 0;
+}
+.footer a{
+    color: #000;
+    font-size: 15px;
+}
+
+@media screen and ( min-width: 740px) and (max-width: 1023px) {
+    /* .width-content{
+        width: 500px;
+    } */
+    .width-content{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .our-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* .about-img{
+        align-self: stretch;
+    } */
+    .desc1-main{
+        /* font-size: 0.8em; */
+    }
+    .desc2-main{
+        display: none;
+    }
+    .menu-description{
+        width: 100%;
+    }
+    .menu-img, .menu-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 739px){
+    .width-content{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .header-nav li{
+            display: none;
+    }
+    .about-img{
+        display: none;
+    }
+    .desc2-main{
+        opacity: 0.7;
+    }
+    .about-description{
+        width: 100%;
+    }
+
+    .our-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-description{
+        width: 100%;
+    }
+    .menu-img, .menu-img img{
+        width: 100%;
+        height: auto;
+    }
+}
